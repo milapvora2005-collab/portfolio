@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milap Vora | Python Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#0f172a,#1e293b,#0f172a,#020617);
+background-size:400% 400%;
+animation:bgMove 12s ease infinite;
+color:white;
+overflow-x:hidden;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+position:sticky;
+top:0;
+background:rgba(15,23,42,.85);
+backdrop-filter:blur(15px);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+background:linear-gradient(45deg,#38bdf8,#06b6d4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+section{
+padding:60px 0;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(56,189,248,.3);
+}
+
+.profile{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.profile img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+box-shadow:0 0 30px rgba(56,189,248,.5);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+.name{
+font-size:45px;
+font-weight:700;
+}
+
+.role{
+font-size:22px;
+color:#38bdf8;
+margin-top:10px;
+min-height:30px;
+}
+
+.about{
+margin-top:15px;
+line-height:1.8;
+color:#cbd5e1;
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:25px;
+font-size:30px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:rgba(255,255,255,.08);
+padding:18px;
+text-align:center;
+border-radius:15px;
+font-weight:600;
+transition:.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:scale(1.05);
+}
+
+.certs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.cert{
+background:rgba(255,255,255,.08);
+border-radius:18px;
+overflow:hidden;
+transition:.4s;
+}
+
+.cert:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(56,189,248,.4);
+}
+
+.cert img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:.4s;
+}
+
+.cert img:hover{
+transform:scale(1.05);
+}
+
+.cert-content{
+padding:20px;
+}
+
+.cert-content h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.links{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.links a{
+padding:14px 28px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+text-decoration:none;
+border-radius:10px;
+transition:.3s;
+}
+
+.links a:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px rgba(56,189,248,.6);
+}
+
+.contact p{
+margin-bottom:12px;
+font-size:18px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:50px;
+border-top:1px solid rgba(255,255,255,.1);
+color:#94a3b8;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.profile{
+justify-content:center;
+text-align:center;
+}
+
+.name{
+font-size:35px;
+}
+
+.profile img{
+width:180px;
+height:180px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+<div class="logo">Milap Vora</div>
+</nav>
+
+<section class="fade">
+
+<div class="card profile">
+
+<img src="D:\WhatsApp Image 2026-06-08 at 8.04.17 PM.jpeg" alt="Milap Vora">
+
+<div>
+
+<div class="name">Milap Hasit Vora</div>
+
+<div class="role">
+<span id="typing"></span>
+</div>
+
+<p class="about">
+Passionate Python Developer with a strong interest in software development,
+Artificial Intelligence, Data Analytics and problem solving. Dedicated to
+continuous learning and creating innovative digital solutions.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">OOP</div>
+<div class="skill">SQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">AI Tools</div>
+<div class="skill">Power BI</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Certifications</h2>
+
+<div class="certs">
+
+<div class="cert">
+<img src="D:\1cirtificate.jpeg">
+<div class="cert-content">
+<h3>AI Tools & ChatGPT Workshop</h3>
+<p>be10X</p>
+<p>Issued: February 1, 2026</p>
+</div>
+</div>
+
+<div class="cert">
+<img src="D:\2cirtificate.jpeg">
+<div class="cert-content">
+<h3>Email Etiquette</h3>
+<p>TCS iON</p>
+</div>
+</div>
+
+<div class="cert">
+<img src="D:\3cirtificate.jpeg">
+<div class="cert-content">
+<h3>Communication Skills</h3>
+<p>TCS iON</p>
+</div>
+</div>
+
+<div class="cert">
+<img src="D:\cirtificate 5.png">
+<div class="cert-content">
+<h3>Data Analytics Using Power BI</h3>
+<p>Participation Certificate</p>
+<p>Issued: April 12, 2026</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Profiles</h2>
+
+<div class="links">
+
+<a href="https://github.com/milapvora2005-collab" target="_blank">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/milap-vora-418652335" target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2>Contact</h2>
+
+<div class="card contact">
+
+<p><strong>Name:</strong> Milap Hasit Vora</p>
+<p><strong>Phone:</strong> +91 9714067546</p>
+<p><strong>Email:</strong> yourmail@gmail.com</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Milap Hasit Vora | Python Developer
+</footer>
+
+</div>
+
+<script>
+
+const text="Python Developer | AI Enthusiast | Power BI Learner";
+let i=0;
+
+function typingEffect(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typingEffect,80);
+}
+}
+
+typingEffect();
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
